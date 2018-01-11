@@ -20,11 +20,21 @@ public class Rectangle {
         return height;
     }
 
+
     public int getWidth() {
         return width;
     }
+
+    public int area() {
+        return height * width;
+    }
+
     public static ArrayList<Rectangle> getAll() {
         return mInstances;
+    }
+
+    public static void clearAllRectangles(){
+        mInstances.clear();
     }
 
     public boolean getShape(){
